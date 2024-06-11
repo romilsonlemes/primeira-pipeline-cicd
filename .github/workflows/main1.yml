@@ -20,4 +20,4 @@ jobs:
         context: ./src
         file: ./src/Dockerfile
         push: true
-        tags: fabricioveronez/aula-primeira-pipeline:v${{ github }}
+        tags: fabricioveronez/aula-primeira-pipeline:v${{ github.run_number }}
