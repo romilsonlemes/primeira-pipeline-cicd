@@ -18,6 +18,6 @@ jobs:
       uses: docker/build-push-action@v5.4.0
       with:
         context: ./src
-        file: ./src/
+        file: ./src/Dockerfile
         push: true
-        tags: user/app:latest     
+        tags: fabricioveronez/aula-primeira-pipeline:v${{ github }}
