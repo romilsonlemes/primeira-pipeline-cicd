@@ -34,4 +34,13 @@ jobs:
         with:
           method: kubeconfig
           kubeconfig: ${{ secrets.K8S_CONFIG }}
+      - name: Execução do Manifesto
+        uses: Azure/k8s-deploy@v5
+        with:
+          namespace: 'myapp'
+          manifests: |
+              .k8s/deployment.yaml
+          images: |
+            romilsonlemes/aula-primeira-pipeline:v${{ github.run_number }}
+ 
 
