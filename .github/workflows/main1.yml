@@ -1,4 +1,4 @@
-name: CI-CD
+name: CI-CD-ROMIS
 on:
   push:
     branches: ["main"]
